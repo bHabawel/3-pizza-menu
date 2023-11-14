@@ -75,7 +75,7 @@ function Menu() {
       </p>
       <ul className="pizzas">
         {pizzaData.map((pizzaData) => (
-          <Pizza pizzaObj={pizzaData} />
+          <Pizza pizzaObj={pizzaData} key={pizzaData.name} />
         ))}
       </ul>
     </main>
